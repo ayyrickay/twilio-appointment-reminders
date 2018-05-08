@@ -1,0 +1,47 @@
+.contactList {
+  grid-column: 1/span 4;
+  grid-row: 2/span 5;
+  display: flex;
+  flex-flow: column;
+}
+
+.contact {
+  display: flex;
+  height: 5em;
+  align-items: center;
+  margin: .5em;
+  padding: .5em;
+}
+
+.contactImage {
+  grid-area: contact-image;
+  width: 4.5em;
+  margin-right: 1em;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.innerContactImage {
+  width: 100%;
+}
+
+.contactInfo {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  padding: .5em;
+  border-bottom: 1px solid #434343;
+  flex: 1;
+  line-height: 1.2;
+}
+
+.contactName {
+  font-size: 1.3em;
+}
+
+.contactStatus {
+}

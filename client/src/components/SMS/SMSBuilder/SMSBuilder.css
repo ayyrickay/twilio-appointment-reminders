@@ -1,0 +1,60 @@
+.messageForm {
+	composes: SMSChild from '../SMS.css';
+	border-left: 1px solid #434343;
+	padding: 0 1em;
+	display: flex;
+	flex-flow: column;
+}
+
+.formDiv {
+	margin: 1em 0;
+}
+
+.formElement {
+	font-size: 1em;
+	line-height: 1.2;
+	width: 100%;
+	margin: .5em 0;
+	border-radius: .2em;
+	border: 1px solid #434343;
+	padding: .3em;
+}
+
+.messageBody {
+	composes: formElement;
+	height: 10em;
+}
+
+.mediaURL {
+	composes: formElement;
+	height: 2em;
+}
+
+.numberList {
+	margin-top: 1em;
+}
+
+.selectedNumbers{
+	display: flex;
+	flex-flow: row wrap;
+	padding-top: .5em;
+	min-height: 2em;
+}
+
+.selectedNumbers li:after {
+	content: ',';
+	margin-right: .5em
+}
+
+.selectedNumbers li:last-child:after {
+	content: ''
+}
+
+.errorText {
+	color: #e74c3c;
+	margin: .3em 0;
+}
+
+.hideText {
+	display: none;
+}

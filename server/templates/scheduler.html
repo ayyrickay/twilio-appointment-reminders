@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="splash">
+    <div class="contents">
+        <div>
+            <h1 class="text-center title">Pick an Appointment</h1>
+            <ul id="booking-list">
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function getQueryStringValue (key) {
+  return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}
+
+const bookingList = document.getElementById('booking-list')
+for (let i = 0; i < 4; i++) {
+  const date = new Date().setHours(3, 30 * i, 0, 0)
+  const item = document.createElement('li')
+  item.classList.add('text-center', 'date-selection')
+  const anchor = document.createElement('a')
+  anchor.appendChild(document.createTextNode(new Date(date).toUTCString()))
+  anchor.href = `/confirmation?time=${date}&to=${encodeURIComponent(getQueryStringValue('to'))}`
+  item.appendChild(anchor)
+  bookingList.appendChild(item)
+}
+</script>
+{% endblock %}
