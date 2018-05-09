@@ -15,6 +15,7 @@ Once you've cloned this repository and switched to the client directory, install
 `npm run lint` will run a linter on the application and make fun of your syntax. Linting rules are based on my personal preferences - namely, my preference for avoiding semicolons and double quotes in my code.
 
 ## Server
+### Setup
 This app was built with Python 2.7. We recommend that you use a virtual environment for development purposes.
 
 Once you've cloned this repository and switched to the server directory, you can install the necessary dependencies using:
@@ -32,6 +33,10 @@ Once your dependencies are installed and your environment is set up, you can use
 `/reset`: reset the status of all of your customers to "new customer"
 
 TODO: `/upload`: sets your sync map to a map provided in `app.py`. See the schema for customer information for more detail
+
+### Example Studio flow
+![a sample Studio flow for appointment reminders](https://github.com/ayyrickay/sms-reminder-demo/blob/master/assets/example-studio-flow.JPG)
+
 
 ### Schema for customer info
 You'll also want to add customers to your Sync Service. Customers are represented in the following format:
