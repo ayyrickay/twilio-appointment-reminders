@@ -35,7 +35,7 @@ Once your dependencies are installed and your environment is set up, you can use
 TODO: `/upload`: sets your sync map to a map provided in `app.py`. See the schema for customer information for more detail
 
 ### Example Studio flow
-![a sample Studio flow for appointment reminders](https://github.com/ayyrickay/sms-reminder-demo/blob/master/assets/example-studio-flow.JPG)
+![a sample Studio flow for appointment reminders](https://github.com/ayyrickay/sms-reminder-demo/blob/master/assets/example-studio-flow.png)
 
 
 ### Schema for customer info
