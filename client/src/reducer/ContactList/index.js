@@ -5,7 +5,7 @@ const initialState = {
   contacts: []
 }
 
-export default function fax(state = initialState, action) {
+export default function contactList(state = initialState, action) {
   switch (action.type) {
     case ContactActions.LOAD_CONTACTS_REQUEST:
       return Object.assign({}, action, state)

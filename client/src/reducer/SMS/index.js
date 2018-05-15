@@ -6,7 +6,7 @@ const initialState = {
   sending: false
 }
 
-export default function fax(state = initialState, action) {
+export default function sms(state = initialState, action) {
   switch (action.type) {
     case SMSActions.UPDATE_MESSAGE_BODY:
       return Object.assign({}, state, action)
