@@ -1,6 +1,4 @@
 import React, {Component} from 'react'
-// import { connect } from 'react-redux'
-// import {sendFax, syncFax} from '../../actions/FaxForm'
 import PropTypes from 'prop-types'
 import styles from './ContactList.css'
 
