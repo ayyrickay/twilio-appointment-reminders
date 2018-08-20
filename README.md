@@ -1,4 +1,4 @@
-# sms appointment reminders
+# twilio appointment reminders
 A react app with a flask backend for sending appointment creation notices and appointment reminders.
 
 ## Client
