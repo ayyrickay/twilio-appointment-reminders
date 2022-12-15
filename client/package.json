@@ -19,7 +19,7 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
     "twilio": "^3.19.1",
-    "twilio-sync": "^0.6.2"
+    "twilio-sync": "^3.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
